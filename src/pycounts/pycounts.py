@@ -10,7 +10,8 @@ def clean_text(text):
     text = text.lower()
     for p in punctuation:
         text = text.replace(p, "")
-
+    return text
+    
 def count_words(input_file):
     text = load_text(input_file)
     text= clean_text(text)
